@@ -1,9 +1,10 @@
 #include "sort.h"
 
 /**
- * insertion_sort_list - Prints a list of integers
+ * insertion_sort_list - sorts a doubly linked list of integers in
+ * ascending order using the Insertion sort algorithm
  *
- * @list: The list to be printed
+ * @list: pointer to list head pointer
  */
 void insertion_sort_list(listint_t **list)
 {
@@ -37,7 +38,6 @@ void insertion_sort_list(listint_t **list)
 			insertion_point = current->prev;
 			print_list(*list);
 		}
-
 		current = current->next;
 	}
 }

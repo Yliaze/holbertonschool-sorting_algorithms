@@ -4,8 +4,8 @@
  * selection_sort - Sorts an array of integers in ascending
  * order using the Selection sort algorithm
  *
- * @array: The list to be printed
- * @size: the size
+ * @array: The array to be printed
+ * @size: Number of elements in @array
  */
 void selection_sort(int *array, size_t size)
 {

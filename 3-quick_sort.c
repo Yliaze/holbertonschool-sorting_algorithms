@@ -1,15 +1,15 @@
 #include "sort.h"
 
 /**
- * partition - Effectue la partitionnement du tableau
- * en utilisant le schéma de partition de Lomuto
+ * partition - Performs the partitioning of the array
+ * using the Lomuto partition scheme
  *
- * @array: Tableau à trier
- * @low: Index de début de la partition
- * @high: Index de fin de la partition
- * @size: size of the array
+ * @array: Array to be sorted
+ * @low: Starting index of the partition
+ * @high: Ending index of the partition
+ * @size: Size of the array
  *
- * Return: Index du pivot après le partitionnement
+ * Return: Index of the pivot after partitioning
  */
 int partition(int *array, int low, int high, size_t size)
 {
@@ -43,14 +43,14 @@ int partition(int *array, int low, int high, size_t size)
 }
 
 /**
- * quick_sort_helper - Fonction auxiliaire récursive
- * pour effectuer le tri rapide
- * en utilisant le schéma de partition de Lomuto
+ * quick_sort_helper - Recursive helper function
+ * to perform quick sort
+ * using the Lomuto partition scheme
  *
- * @array: Tableau à trier
- * @low: Index de début de la partition
- * @high: Index de fin de la partition
- * @size: size of the array
+ * @array: Array to be sorted
+ * @low: Starting index of the partition
+ * @high: Ending index of the partition
+ * @size: Size of the array
  */
 void quick_sort_helper(int *array, int low, int high, size_t size)
 {
@@ -66,12 +66,11 @@ void quick_sort_helper(int *array, int low, int high, size_t size)
 }
 
 /**
- * quick_sort - Trie un tableau d'entiers en utilisant
- * l'algorithme de tri rapide avec le schéma de partition
- * de Lomuto
+ * quick_sort - Sorts an array of integers using
+ * the Quick Sort algorithm with the Lomuto partition scheme
  *
- * @array: Tableau à trier
- * @size: Taille du tableau
+ * @array: Array to be sorted
+ * @size: Size of the array
  */
 void quick_sort(int *array, size_t size)
 {
